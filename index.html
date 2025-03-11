@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <style>
+        header {
+            background: url(/kuvat/vuorimaisema.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 1000px;
+        }
+
+        section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+        
+        body {
+            background-color: rgb(75, 58, 65);
+        }
+        @media screen and (max-width: 670px) {
+            header {
+                min-height: 500px;
+            }
+        }
+
+        /*Tabs tyylit alkaa*/
+        .tabs .tab a{
+            color: brown;
+        } /*Black color to the text*/
+
+        .tabs .tab a:hover {
+            background-color:#eee;
+            color: brown;
+        } /*Text color on hover*/
+
+        .tabs .tab a.active {
+            background-color:rgba(255, 228, 196, 0.897);
+            color: brown;
+        } /*Background and text color when a tab is active*/
+
+        .tabs .indicator {
+            background-color: yellow;
+        } /*Color of underline*/
+        /*Tabs tyylit loppuu*/
+
+        /*Asukkien kuvat alkaa*/
+        .row img {
+            border-radius: 50%;
+        }
+        /*Asukkien kuvat loppuu*/
+
+        /*Paluu juurille alkaa*/
+        .start {
+            background-color: rgb(105, 61, 79);
+            padding: 10px;
+            border: 2px solid white;
+            border-radius: 3%;
+            font-size: 18px;
+        }
+
+        .start:hover {
+            background-color: burlywood;
+        }
+
+        .date {
+            font-size: 16px;
+        }
+        /*paluu juurille loppuu*/
+     </style>
+    <title>Mehtäläiset</title>
+</head>
+<body>
+    <!--Nav alkaa-->
+    <header>
+        <nav class="nav-wrapper transparent ">
+            <div class="container">
+                <a href="" class="brand-logo" id="start">Mehtäläiset</a>
+                <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#asukit">Asukit</a></li>
+                    <li><a href="#night">Elävien kuolleiden yö</a></li>
+                    <li><a href="#contact">Ollaan kuulolla</a></li>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="#asukit">Asukit</a></li>
+                    <li><a href="#night">Elävien kuolleiden yö</a></li>
+                    <li><a href="#contact">Ollaan kuulolla</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Nav loppuu-->
+
+    <!--Asukkien kuvat ja leipäteksti alkaa-->
+    <section class="container section" id="photo">
+        <div class="row" id="asukit">
+            <div class="col s12 l4">
+                <img src="/kuvat/naamio.jpg" alt="naamio" class="responsive-img materialboxed" width="650">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="yellow-text text-darken-4">Asukit</h2>
+                <p class=" white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptatem unde dolore explicabo excepturi beatae officia cupiditate nemo, eligendi in ex?</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4 push-l5 offset-l1">
+                <img src="/kuvat/zombie.jpg" alt="zombie" class="responsive-img materialboxed" width="650">
+            </div>
+            <div class="col s12 l6 pull-l5 right-align">
+                <h2 class="yellow-text text-darken-4">Asukit</h2>
+                <p class=" white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptatem unde dolore explicabo excepturi beatae officia cupiditate nemo, eligendi in ex?</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="/kuvat/nainen.jpg" alt="nainen" class="responsive-img materialboxed" width="650">
+            </div>
+            <div class="col s12 l6">
+                <h2 class="yellow-text text-darken-4">Asukit</h2>
+                <p class=" white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptatem unde dolore explicabo excepturi beatae officia cupiditate nemo, eligendi in ex?</p>
+            </div>
+        </div>
+    </section>
+    <!--Asukkien kuvat ja leipäteksti loppuu-->
+
+    <!--hautausmaa liikkuva tautakuva alkaa-->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="/kuvat/semetery.jpg" alt="hautausmaa" class="responsive-img">
+        </div>
+    </div>
+    <!--Hautausmaa liikkuva taustakuva loppuu-->
+
+    <!--Yhteisö alkaa-->
+    <section class="container section" id="services">
+        <div class="row">
+            <div class="col s12 l4">
+                <h2 class="yellow-text text-darken-4" id="night">Elävien kuolleiden yö</h2>
+                <p class="white-text">Kuolleet heräävät henkiin ja käyttävät ihmislihaa ravinnokseen. 
+                Paniikin aalto leviää ympäri maailmaa. Pieni joukko ihmisiä pakenee autioon taloon taistelemaan eloonjäämisestään.</p>
+                <p class="white-text">Elävien kuolleiden armeijan kasvaessa joukko huomaa, että suurin uhka selvitymiselle saattaa löytyä omien joukosta…</p>
+            </div>
+            <div class="col s12 l6 offset-l2">
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#alku" class="yellow-text text-darken-4">Lopun alku</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="#selviytyminen" class="yellow-text text-darken-4">Selviytyminen</a>
+                    </li>
+                </ul>
+                <div class="col s12" id="alku">
+                    <p class="flow-text yellow-text text-darken-4">Lopun alku</p>
+                    <p class="white-text">Alussa sisarukset Barbra ja Johnny käyvät hautausmaalla isänsä haudalla. 
+                    Zombiksi (elävistä kuolleista tosin käytetään elokuvassa nimitystä "ghoul") muuttunut vanha mies hyökkää heidän kimppuunsa ihmislihaa himoten. 
+                    Barbra onnistuu pakenemaan ja päätyy autiolle maatalolle, jossa piilottelee myös Ben. He laudoittavat talon ovet ja ikkunat, kun lauma zombeja alkaa piirittää sitä.
+                    Talon kellarista löytyy myös muita ihmisiä, Tom ja Judy sekä pariskunta Harry ja Helen Cooper tyttärineen. Cooperien tytär Karen on loukkaantunut zombien hyökkäyksestä ja on sairas. </p>
+                </div>
+                <div class="col s12" id="selviytyminen">
+                    <p class="flow-text yellow-text text-darken-4">Selviytyminen</p>
+                    <p class="white-text">Ben pakenee takaisin talolle, mutta huomaa Harryn lukinneen hänet ulos. 
+                    Ben onnistuu murtautumaan takaisin sisälle ja laudoittaa Harryn kanssa oven. 
+                    Zombit yrittävät päästä talon sisälle ja Benin estäessä niitä hän pudottaa kiväärinsä. Harry nappaa sen ja osoittaa Beniä sillä. 
+                    Ben onnistuu saamaan kiväärin takaisin ja ampuu Harryä. Harry raahautuu kellariin ja kuolee tyttärensä vierelle.
+                    Zombiksi muuttunut Karen Cooper (Kyra Schon).
+                    Myöhemmin Helen löytää kellarista zombiksi muuttuneen tyttärensä, joka syö isänsä ruumista. Karen tappaa äitinsä. Barbra näkee Johnnyn zombijoukossa ja järkyttyy niin paljon, ettei pysty puolustautumaan zombien murtautuessa talon sisälle. 
+                    Ben pakenee kellariin ja onnistuu selviämään yön yli. Hän palaa yläkertaan ja kuulee zombien metsästäjien kiväärien laukauksia. Yksi metsästäjä erehtyy luulemaan häntä zombiksi ja ampuu Benin. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Yhteisö loppuu-->
+s
+    <!--Toinen liikkuva taustakuva alkaa-->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="/kuvat/metsävih.jpg" alt="Vihreä metsä" class="responsive-img">
+        </div>
+    </div>
+    <!--Toinen liikkuva taustakuva loppuu-->
+
+    <!--Ollaan kuulolla alkaa-->
+    <section class="section container" id="contact">
+        <div class="row">
+            <div class="col s12 l5">
+                <h2 class="yellow-text text-darken-4">Ollaan kuulolla</h2>
+                <p class="white-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, tenetur?</p>
+                <p class="white-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, tenetur?</p>
+                <p class="white-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, tenetur?</p>
+                <p class="white-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, tenetur?</p>
+                <p class="white-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, tenetur?</p>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <form action="">
+                    <div class="input-field">
+                        <i class="material-icons prefix yellow-text text-darken-4">email</i>
+                        <input type="email" id="email" class="white-text">
+                        <label for="email">Sähköpostiosoitteesi?</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix yellow-text text-darken-4">message</i>
+                        <textarea id="message" class="materialize-textarea white-text"></textarea>
+                        <label for="message">Viestisi meille?</label>
+                    </div>
+                    <i class="material-icons prefix yellow-text text-darken-4">date_range</i>
+                    <input type="text" id="date" class="datepicker white-text">
+                    <label class="date" for="date">Valitse sopiva päivä</label>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--Ollaan kuulolla loppuu-->
+
+    <section class="section container">
+        <div class="row">
+            <div class="col s12 l5">
+                <h2 class="yellow-text text-darken-4">Paluu juurille</h2>
+                <br>
+            <ul><li><a href="#start" class="yellow-text text-darken-4 start">Voit palata tästä sivun alkuun</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="/kuvat/talo.jpg" alt="talo" class="responsive-img">
+        </div>
+    </div>
+
+
+
+
+
+    <!--JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
+    <script>
+        //Asukkien kuvat isommaksi hover
+        document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.materialboxed');
+          var instances = M.Materialbox.init(elems, options);
+        });
+        
+        $(document).ready(function(){
+        $('.sidenav').sidenav();//Mobiili Navi
+        $('.materialboxed').materialbox();//Asukkien kuvat
+        $('.parallax').parallax();//Hautausmaa liikkuva taustakuva
+        $('.tabs').tabs();//Apocalypse valikko
+        $('.datepicker').datepicker({//Kalenteri
+            disableWeekends: true
+        });
+        });
+    </script>
+
+</body>
+</html>
